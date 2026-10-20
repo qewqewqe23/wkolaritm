@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru"> <!-- Изменен язык на русский -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Школа танцев ритм</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Добавлен favicon для улучшения пользовательского опыта -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <!-- Улучшена структура шапки сайта -->
+        <div class="header-inner">
+            <a href="#" class="logo">Ритм</a>
+            <nav>
+                <ul id="navmenu">
+                    <li><a href="#beginners">Новичкам</a></li>
+                    <li><a href="#directions">Направления</a></li>
+                    <li><a href="#schedule">Расписание</a></li>
+                    <li><a href="#teachers">Преподаватели</a></li>
+                </ul>
+            </nav>
+            <!-- Добавлен атрибут type для кнопки -->
+            <button class="burger" id="burger" aria-label="Меню" type="button">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Секция для новичков -->
+    <section class="beginners" id="beginners">
+        <div class="container">
+            <h2 class="section-title">Как начать танцевать</h2>
+            <!-- Исправлены ошибки в структуре блоков шагов -->
+            <div class="steps">
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <h3>Оставить заявку</h3>
+                    <p>Заполните форму — подберём удобное время и ответим на вопросы</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <h3>Приходите на пробное</h3>
+                    <p>Первое занятие бесплатно</p>
+                </div>
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <h3>Попробуйте</h3>
+                    <p>Познакомьтесь с преподавателем, группой и атмосферой</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция направлений -->
+    <section class="directions" id="directions">
+        <div class="container">
+            <h2 class="section-title">Направления для новичков</h2>
+            <!-- Исправлены опечатки и структура карточек -->
+            <div class="cards">
+                <div class="card">
+                    <div class="badge badge-beginner">C нуля</div>
+                    <h3>Hip-Hop</h3>
+                    <p>Базовые движения, ритм и уверенность. Идеально для первого раза.</p>
+                    <div class="price">1 200 ₽ <small>/ занятие</small></div>
+                </div>
+                <div class="card">
+                    <div class="badge badge-beginner">C нуля</div>
+                    <h3>Contemporary</h3>
+                    <p>Мягкие движения и растяжка. Учимся чувствовать своё тело.</p>
+                    <div class="price">1 300 ₽ <small>/ занятие</small></div>
+                </div>
+                <div class="card">
+                    <div class="badge badge-beginner">C нуля</div>
+                    <h3>Jazz Funk</h3>
+                    <p>Ярко, энергично и просто, подходит для любого уровня</p>
+                    <div class="price">1 400 ₽ <small>/ занятие</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция расписания -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <h2 class="section-title">Расписание занятий</h2>
+            <!-- Добавлены атрибуты scope для таблицы -->
+            <table>
+                <thead>
+                    <tr>
+
+                        <th scope="col">
+                        Время</th>
+                        <th scope="col">Пн</th>
+                        <th scope="col">Ср</th>
+                        <th scope="col">Пт</th>
+                        <th scope="col">Сб</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hl-time">10:00</td>
+                        <td>Hip-Hop <span class="mark">новичок</span></td>
+                        <td>Jazz Funk <span class="mark">новичок</span></td>
+                        <td>Hip-Hop <span class="mark">новичок</span></td>
+                        <td>Contemporary <span class="mark">новичок</span></td>
+                    </tr>
+                    <tr>
+                        <td class="hl-time">12:00</td>
+                        <td>Contemporary <span class="mark">новичок</span></td> <!-- Изменение 9: исправлена опечатка "Contepmorary" -->
+                        <td>High Heels <span class="mark">новичок</span></td>
+                        <td>DanceHall</td>
+                        <td>Breaking</td>
+                    </tr>
+                    <tr>
+                        <td class="hl-time">15:00</td>
+                        <td>Breaking</td>
+                        <td>Hip-Hop</td>
+                        <td>High Heels <span class="mark">новичок</span></td>
+                        <td>Jazz Funk</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Секция преподавателей -->
+    <section class="teachers" id="teachers">
+        <div class="container">
+            <h2 class="section-title">Преподаватели для новичков</h2>
+            <div class="teachers-grid">
+                <div class="teacher">
+                    <div class="avatar">A</div>
+                    <h3>Анна Бебровна</h3>
+                    <div class="role">Contemporary / Jazz Funk</div>
+                    <p>Объяснит каждое движение. Специалист по обучению с нуля</p>
+                </div>
+                <div class="teacher">
+                    <div class="avatar">M</div>
+                    <h3>Максимильян Рожковцев</h3>
+                    <div class="role">Hip-Hop</div>
+                    <p>Его девиз — «Не бывает неспособных — бывает непонятно объяснено»</p>
+                </div>
+                <div class="teacher">
+                    <div class="avatar">L</div>
+                    <h3>Леончик Бравловский</h3>
+                    <div class="role">DanceHall / Breaking</div>
+                    <p>Помогает раскрыться даже самым стеснительным, покажет штольню как в 2к19</p>
+                </div>
+                <div class="teacher">
+                    <div class="avatar">N</div>
+                    <h3>Николай Басков</h3>
+                    <div class="role">Hip-Hop / High Heels</div>
+                    <p>Разложит самое сложное на простое. Споёт «Золотая чаша золотая»</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция контактов -->
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Запишитесь на пробное</h2>
+            <div class="contact-info">
+                <h3>Школа танцев «Ритм»</h3>
+                <div class="contact-item">
+                    <strong>Адрес</strong>
+                    <span>г. Тюмень, ул. Золоточашная, 15</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Телефон</strong>
+                    <span>+7 (999) 123-67-52</span>
+                </div>
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    <span>info@mail.ru</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <a href="#" class="logo">Ритм</a>
+            <div class="socials">
+                <a href="https://web.telegram.org/" aria-label="Telegram">Т</a> <!-- Изменение 14: тег <A> заменён на строчный <a> -->
+                <a href="https://vk.ru/?u=2&to=L2luZGV4LnBocD95c2NsaWQ9bXV6Y3F0aHJ2bzY0MjM2ODgzNA--" aria-label="VK">ВК</a> <!-- Изменение 15: Добавлены ссылки на социальные сети <a> -->
+                <a href="https://www.google.com/goto?url=CAESWAHrOzAVqWfFwE2stLE3cTpD-WM3ZX6tktiV_Mm5jcqquRpSBNXI4IHGyXpsC3deqJ4dO4l7a5UY0XGLIhTk2qMld7JkQUxKbbNZfsjitun4K-7kM1U7F60" aria-label="Instagram">И</a>
+            </div>
+            <p>2026 Школа танцев «Ритм»</p>
+        </div>
+    </footer>
+
+</body>
+</html>
